@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones Electrónicas - Lorens Qp</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex-grow: 1;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- =========== Header / Navegación =========== -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="" class="flex items-center text-2xl font-bold text-cyan-400">
+                <span>Lorens</span>
+                <img src="LorensqP.png" alt="Logo de Lorens Qp" class="h-12 ml-2">
+            </a>
+            <nav class="hidden md:flex space-x-8"></nav>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- =========== Contenido Principal =========== -->
+    <main id="inicio" class="pt-24">
+        <!-- Sección de Bienvenida -->
+        <section class="relative container mx-auto px-6 py-12 md:py-20 overflow-hidden">
+            <!-- Logo de fondo -->
+            <div class="absolute inset-0 flex items-center justify-center z-0">
+                <img src="LorensqP.png" alt="Logo de fondo" class="w-1/2 h-auto opacity-5 blur-sm"
+                     onerror="this.style.display='none'">
+            </div>
+            
+            <!-- Contenido principal de la sección -->
+            <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                        De la <span class="text-cyan-400">Idea</span> al <span class="text-cyan-400">Producto</span>: Soluciones Electrónicas a tu Medida.
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Diseño, prototipado y programación de circuitos con ESP32 y Atmega. Llevamos tu proyecto al siguiente nivel con tecnología de punta.
+                    </p>
+                    <a href="#contacto" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors inline-block">
+                        Contáctame
+                    </a>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="Hero-2.png" 
+                         alt="Hombre diseñando circuitos electrónicos en dos pantallas de PC" 
+                         class="rounded-lg shadow-2xl shadow-cyan-500/20 w-full max-w-sm h-auto object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/111827/FFFFFF?text=Hero-2+no+encontrada';">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="bg-gray-800/50 py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Nuestros Servicios</h2>
+                    <p class="text-lg text-gray-400 mt-2">Ofrecemos soluciones integrales para tu proyecto. Solo dinos lo que deseas.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-cyan-500 hover:scale-105 transition-all">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-500/10 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3M5.636 5.636l-1.414-1.414M19.778 19.778l-1.414-1.414M18.364 5.636l-1.414 1.414M4.222 19.778l1.414-1.414M12 12a6 6 0 100-12 6 6 0 000 12z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Diseñamos su hardware (PCB)</h3>
+                        <p class="text-gray-400">Transformamos tu idea en un producto real. Desde el diseño del esquemático hasta la fabricación del PCB, cuidamos cada detalle.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-cyan-500 hover:scale-105 transition-all">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-500/10 mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Desarrollo de Firmware</h3>
+                        <p class="text-gray-400">Programación experta en C++ para ESP32 y Atmega. Creamos un firmware robusto, eficiente y a la medida para el corazón de tu producto.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-cyan-500 hover:scale-105 transition-all">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-500/10 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Integración Web y App</h3>
+                        <p class="text-gray-400">Conectamos tu hardware al mundo digital. Desarrollamos la web o app que tu producto necesita para una experiencia de usuario completa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección ¿Por qué ESP32? -->
+        <section id="esp32" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-last md:order-first">
+                        <img src="https://placehold.co/500x500/111827/06B6D4?text=ESP32" 
+                             alt="Microcontrolador ESP32 sobre una placa de prototipos" 
+                             class="rounded-lg shadow-2xl shadow-cyan-500/20 w-full max-w-md mx-auto h-auto object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">La Potencia y Versatilidad del <span class="text-cyan-400">ESP32</span></h2>
+                        <p class="text-lg text-gray-300 mb-8">
+                            Nos especializamos en ESP32 por su increíble equilibrio entre potencia, conectividad y costo, permitiendo crear productos innovadores y eficientes.
+                        </p>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full bg-cyan-500/10 mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071a10 10 0 0114.142 0M1.394 8.532a15 15 0 0121.212 0" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl">Conectividad Total</h4>
+                                    <p class="text-gray-400">Wi-Fi y Bluetooth integrados, perfectos para cualquier proyecto IoT y dispositivos conectados.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full bg-cyan-500/10 mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3.414A1 1 0 0110 3h4a1 1 0 01.9.54l3 5a1 1 0 010 .92l-3 5A1 1 0 0114 15h-4a1 1 0 01-1-1V4.414zM9 4v10M15 4v10" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl">Alto Rendimiento</h4>
+                                    <p class="text-gray-400">Su procesador de doble núcleo gestiona tareas complejas, interfaces y comunicaciones sin esfuerzo.</p>
+                                </div>
+                            </li>
+                             <li class="flex items-start">
+                                <div class="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full bg-cyan-500/10 mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl">Costo-Efectivo</h4>
+                                    <p class="text-gray-400">Ofrece la mejor relación potencia-precio, haciendo viables prototipos y producciones a gran escala.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Sección Sobre Mí =========== -->
+        <section id="sobre-mi" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-12 items-center">
+                    <!-- Columna de Imagen -->
+                    <div class="md:col-span-1 flex justify-center">
+                        <img src="ManuelFeliz.jpg" 
+                             alt="Foto de Lorens Qp" 
+                             class="rounded-full shadow-2xl shadow-cyan-500/20 w-64 h-64 md:w-80 md:h-80 object-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/111827/FFFFFF?text=Foto+no+encontrada';">
+                    </div>
+                    <!-- Columna de Texto -->
+                    <div class="md:col-span-2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Más que un Ingeniero, un Creador de Soluciones</h2>
+                        <p class="text-lg text-gray-300 mb-6">
+                            Me especializo en hardware y software, capaz de transformar cualquier idea en un producto funcional, sin importar su complejidad. Desde el concepto inicial hasta una aplicación móvil conectada a tu dispositivo, lo hago realidad. Solo cuéntame tu visión, por muy audaz que parezca.
+                        </p>
+                        <div class="bg-gray-800/50 p-6 rounded-lg border-l-4 border-cyan-500">
+                            <h4 class="font-bold text-xl mb-2">Un Comienzo Electrizante</h4>
+                            <p class="text-gray-400 italic">
+                                "Mi pasión por la electrónica nació de una forma... inesperada. Criado en el campo, con pocos entretenimientos virtuales, un libro de electrónica despertó mi interés a los 10 años. Poco después, un choque eléctrico accidental con una cámara, lejos de asustarme, encendió una curiosidad que me ha impulsado desde entonces."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Contacto por WhatsApp -->
+        <section id="contacto" class="bg-gray-800/50 py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">¿Listo para Empezar?</h2>
+                <p class="text-lg text-gray-400 mt-2 mb-8">Haz clic en el botón para enviarme un mensaje directo por WhatsApp.</p>
+                <a href="https://wa.me/18097751314?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20estoy%20interesado%20en%20tus%20servicios." 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors inline-flex items-center" style="gap:0.5rem;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAAAHYAAAB2AU57JggAAATtaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA2LjAtYzAwMiA3OS4xNjQ0ODgsIDIwMjAvMDcvMTAtMjI6MDY6NTMgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi4wIChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjUtMDgtMDhUMTE6MTQ6NTMtMDQ6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDI1LTA4LTA4VDExOjE1OjIzLTA0OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDI1LTA4LTA4VDExOjE1OjIzLTA0OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4YTMzMWFhYS05YTdkLTIwNDgtOWNkYy0yN2RlOThkZDVkYWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OGEzMzFhYWEtOWE3ZC0yMDQ4LTljZGMtMjdkZTk4ZGQ1ZGFmIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OGEzMzFhYWEtOWE3ZC0yMDQ4LTljZGMtMjdkZTk4ZGQ1ZGFmIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo4YTMzMWFhYS05YTdkLTIwNDgtOWNkYy0yN2RlOThkZDVkYWYiIHN0RXZ0OndoZW49IjIwMjUtMDgtMDhUMTE6MTQ6NTMtMDQ6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi4wIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7aHBB8AAADXklEQVRYhcWXXYgWVRyHn101Bb/BsJDWMhCzgoxau1liKYjKLaEkiMir6IsgiCAQkaIISaK86qIgSoiCIPu4y7ZQirrZoL0LDcTczdZWWSl33d2nizmz73/HmXfe99XoB4c5Z87/45lz5pwz06Xyf2phG7bdQC+wHbgT2ACsAS4Ap4DfgSHgc2AQmGwpqlpXFqlPqydsXWfVV9QVdfG7aqagH3gH2BjuzaYn/RUYTSOwFlgP3AEsDrZjwIvA+52MwDPqhfBUR9Wn1Kua+CxXd6g/FkZkv7qwzKcq0GvB+W/1efWKFqYrL13qQ+pIiPNlGUSZ8+PB6aTa20biYlmn/hTivVkHcKt6PhmfUq+7hOR5WaoOBYjHmgF8m4wm1b7LkDwvPeofKfZIgroIYFugfKMQoFcdVafVuzqEeDTE31UG8HXq/EtdHe4vUY8H50MdAnTbmIo/1QURYLU6lTrfKjg+6HzNqps6hNgZ4vSpdKft4H5gUaofLGwV1xTaXcDOZrtXE30FzKT6ADAH0Juuk8DhgtPxQns6BepEY8DPqX5LBLg2XUdSgqhBYCK09wNHOgSAxgNdHQFWBICiJoB9ob2FbBo6VZ5jHsBUulYF3gsMp3o/sOcSAJbERg4wnq5XVjhNAjuAM6m9B3iuxK4H2FQDsC5dTwNzy/DltDRm1JVNltHdNrZq1XfDnrFG/S0t04Pq1ooYx5LvF3EfGAhBB2rWcr/ZB0eucbOd83sv1ksF3xtD3wsRYKl6LnV8XAOA2aF1tCRhUa8W/HaHvusjAOqB1DGlbmwBYpn6egAv6px6Q7BfqY6lvqH8fgx4s9n8qX7aAkBeVqlPqoPqGbPp+chsuKPd3gC3vQwAs5dI9bs2AFop95mdpKpHYl806gmEu9oIXle2pJFRnVBvqgJ4IgDcfpmSb7OxYmbNPljn2cTGJ8lwzOzsXqbeq+5TP1A3t5F4ffLJ36lp9dky27yyQD2djE+oh218H+SaUT9TH1HXlgRbrj6sfqj+E/zG1XuqYPPKVqs1nZIXdVL9RR0O8FGzZqO6oSp5BNhdcB5W31YfMFu/m9X3bLxMzTSREldtxfNK/mt2gOxEPJTKaMVBshjoA25Lh84qsh/cs8Ax4AfgG+B8zYE0p7p/w/9c/wIbwfSUxUd5cgAAAABJRU5ErkJggg==" style="height: 30px;">
+                    Chatear por WhatsApp
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========== Footer =========== -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-400">
+            <p>&copy; <span id="year"></span> Lorens Qp. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el año del footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
